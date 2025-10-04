@@ -100,7 +100,7 @@ def limpar_valores(coluna):
         .astype(float)
     )
 
-# trata duplicadas
+# trata duplicatas
 df_final["Parcela"] = pd.to_numeric(df_final["Parcela"], errors="coerce")
 df_final["Valor parcela"] = limpar_valores(df_final["Valor parcela"])
 df_final["Valor total NF"] = limpar_valores(df_final["Valor total NF"])
